@@ -3,8 +3,10 @@ class Solution {
         int answer = 0;
         for (String i : s1) {
             for (String j : s2) {
-                if (i.equals(j))
+                if (i.equals(j)) {
                     answer++;
+                    break;
+                }
             }
         }
         return answer;
