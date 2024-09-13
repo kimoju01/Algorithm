@@ -17,6 +17,7 @@ class Solution {
         // 스테이지 별 실패율 구하기
         HashMap<Integer, Double> failureRate = new HashMap<>();
         for (int i = 0; i < N; i++) {
+            // ZeroDivisionError: division by zero 방지용으로 if 문 추가
             if (notClearUser[i] == 0) {
                 failureRate.put(i, (double) 0);
                 continue;
